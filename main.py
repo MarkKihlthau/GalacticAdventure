@@ -191,7 +191,7 @@ while running:
                         enemy_list.pop(i-1)
 
     for obj in enemy_list:
-        if obj.y < 500 and obj.alive is True:
+        if obj.y < 350 and obj.alive is True:
             if 0 < obj.x < X_max-64 and obj.bounce is False:
                 obj.x += enemy_speed
             elif obj.x >= X_max-64:
